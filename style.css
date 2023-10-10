@@ -1,0 +1,206 @@
+/*------------------------------
+           Variables
+-------------------------------*/
+:root{
+    --Banner:url(../Images/golden-gate-bridge-4271364_1280.jpg);
+    --Profile: #ffffff;
+    --color1:#ff0080;
+    --color1D:#00ff80;
+    --color2:#ffffff;
+    --color2D:#ffffff;
+    --color3:#ffffff;
+    --color3D:#ffffff;
+
+    --Font:#000000;
+    --Font2:#000000;
+
+    --BG:#ffffff;
+    --Sect:#e5e5e5;
+}
+
+/*------------------------------
+           Custom
+-------------------------------*/
+body{
+    background-color: var(--BG);
+    color: var(--Font);
+}
+
+section{
+    margin:2px;
+    border:0px;
+    padding:1px;
+    width:100%;
+    background: var(--Sect);
+    font-family: "Times New Roman";
+    color:var(--Font)
+}
+
+section h2{margin-left:1%;}
+/*=========================================================================================*/
+
+/*------------------------------
+       Top menu section
+-------------------------------*/
+.TopMenu{height: 40px;position:fixed;width: 98.5%; /*background: #e5e5e5;*/}
+#MenuTop{height: 40px; /*background: #e5e5e5;position:fixed;*/}
+.TopMenu a{
+    font-size:20px;
+    text-decoration:none;
+    padding-top:8px;
+    color:var(--Font)
+}
+.TopMenu a:hover{text-decoration:underline;transform:scale(1.1);color:var(--color1)}
+
+.TopMenu a.Left{padding-left:1%;float:left;}
+
+.TopMenu a.Right{padding-right:1%;float:right;}
+
+.TopMenu label.Right{
+    padding-top:8px;
+    padding-right:2.5%;
+    float:right;
+}
+#NMode{display:none;/*padding:35px;*/}
+
+body:has(#NMode:checked){
+    --Font:#ffffff;
+    --BG:#000000;
+    --Sect:#353535;
+}
+
+.custom-checkbox{font-size:20px;color:var(--Font)}
+
+.custom-checkbox input[type="checkbox"], .custom-checkbox .checked {display: none;}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked {display: inline-block;}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked {display: none;}
+/*=========================================================================================*/
+
+/*------------------------------
+       Name Card section
+-------------------------------*/
+.Face{
+    display:grid;
+    background: var(--BG);
+    grid-template-columns: [col1-start] 250px [col1-end col2-start] auto [col2-end];
+    grid-template-rows: [row1-start] 30% [row1-end row2-start] 30% [row2-end row3-start]30%[row3-end] ;
+    /*background-image: var(--Banner);
+    background-position:0% 30% ;
+    background-size: 100%, cover;*/
+    color:#111111;
+}
+.Face img{
+    grid-area: row1 / col1 / row3 / col1;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin: 7%;
+    margin-left: 15%;
+}
+.Face #ProfileName{
+    grid-column: col2;
+    grid-row: row2;
+    font-size:50px;
+    white-space: nowrap;
+}
+.Face #SubInfo{
+    grid-column: col2;
+    grid-row: row3;
+    font-size:30px;
+    margin-top: 15px;
+    margin-left: 100px;
+    white-space: nowrap;
+}
+.Face #particles{
+    background: #111111;
+    grid-area: row1 / col1 / row3 / col2;
+}
+/*=========================================================================================*/
+
+/*------------------------------
+       Intro section
+-------------------------------*/
+.Intro p{margin: 6%;margin-top: 2%;margin-bottom: 3%;}
+/*------------------------------
+Experience and Academics section
+-------------------------------*/
+/*.Experience article{margin-top:1%;margin-left:3.5%;display: grid;
+    grid-template-columns: [col1-start] 5% [col1-end col2-start] auto [col2-end col3-start]25%[col3-end];
+    grid-template-rows: [row1-start] 12% [row1-end row2-start] 15% [row2-end row3-start]auto[row3-end row4-start]auto[row4-end] ;
+}
+.Experience article h3{grid-column: col1;grid-row: row1;white-space: nowrap;}
+.Experience article h4{grid-column: col1;grid-row: row2;white-space: nowrap;margin-left: 30%;}
+.Experience article #Date{grid-column: col2;grid-row: row1;margin-left: 45%;}
+.Experience article #Place{grid-column: col2;grid-row: row2;margin-left: 45%;}
+.Experience article ul{grid-column: col2;grid-row: row3;}
+.Experience article dl{grid-column: col2;grid-row: row4;margin-top: -30px;}*/
+.ExAcc article{margin-top:1%;margin-left:3.5%;display: grid;
+    grid-template-columns: [col1-start] 5% [col1-end col2-start] auto [col2-end col3-start]25%[col3-end];
+    grid-template-rows: [row1-start] 12% [row1-end row2-start] 15% [row2-end row3-start]auto[row3-end row4-start]auto[row4-end] ;
+}
+.ExAcc article h3{grid-column: col1;grid-row: row1;white-space: nowrap;}
+.ExAcc article h4{grid-column: col1;grid-row: row2;white-space: nowrap;margin-left: 30%;}
+.ExAcc article #Date, #Date1, #Date2, #Date3{grid-column: col2;grid-row: row1;margin-left: 45%;}
+.ExAcc article #Place, #Place1, #Place2, #Place3{grid-column: col2;grid-row: row2;margin-left: 45%;}
+.ExAcc article ul{grid-column: col2;grid-row: row3;}
+.ExAcc article dl{grid-column: col2;grid-row: row4;margin-top: -30px;}
+
+/*------------------------------
+         Projects
+-------------------------------*/
+.Projects{display: flex; justify-content: space-evenly; flex-wrap: wrap}
+
+.Projects .Container{
+    display: grid;
+    grid-template-rows: [row1-start]auto[row1-end];/*[row1-end row2-start]auto[row2-end row3-start]auto[row3-end];*/
+    grid-template-columns: [col1-start] Auto [col1-end];
+    background-color: #ff0080;
+    min-width: 350px;
+    min-height: 300px;
+    margin: 1%;
+
+}
+.Projects h2 {flex-basis: 100% }
+.Projects a{
+    color: ivory;
+}
+/*------------------------------
+         Form details
+-------------------------------*/
+.Form form{font-size:18px;}
+.Form form label{margin-top:100px;}
+.Form form input[type='text']{height:20px;margin-left:5px;;margin-right:20px;}
+.Form form #ContactTitle {width:50px}
+.Form form #ContactName {width:250px}
+.Form form #ContactMode {width:200px;}
+.Form form button {margin:10px;height:30px;width:100px;border:0px;background:Ivory; margin-bottom: 40px;}
+
+/*------------------------------
+         Footer Notes
+-------------------------------*/
+
+.Footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #353535;
+    color: ivory;
+}
+
+.Footer .Container{
+    display: grid;
+    grid-template-rows: [row1-start]auto[row1-end];/*[row1-end row2-start]auto[row2-end row3-start]auto[row3-end];*/
+    grid-template-columns: [col1-start]auto[col1-end];
+    background-color: #ff0080;
+    width: 400px;
+    height: 350px;
+    margin: 2%;
+}
+.Footer a{
+    color: ivory;
+}
+#externalLinks a{
+    align-self: center;
+    justify-self: center;
+}

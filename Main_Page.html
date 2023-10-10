@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+    <!--- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --->
+</head>
+<body>
+<!----------------  Top Menu --------------------->
+<section class="TopMenu">
+    <a class="Left" href="">Home</a>
+    <a class = "Right" href="#ContactForm">Contact</a>
+    <a class = "Right" href="">About</a>
+    <a class = "Right" href="">Sample</a>
+    <!--- darkmode switch --->
+    <label class="custom-checkbox Right">
+        <input type=checkbox id="NMode"></input>
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-toggle-off unchecked"></i>
+        <i class="fas fa-toggle-on checked"></i>
+        <i class="fas fa-moon"></i>
+    </label>
+
+</section>
+<section id="MenuTop"></section>
+<!----------------  Banner --------------------->
+<section id = "Main Name" class = "Face">
+    <div id = "particles"></div>
+    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Pic">
+    <label id="ProfileName">Sashank Pidur Kuppuswamy</label>
+    <label id="SubInfo">San Jose, C.A.</label>
+</section>
+<!----------------  Intro  --------------------->
+<section class = "Intro">
+    <h2> Summary </h2>
+    <p> Data Analyst and Programmer with 4+ years of experience in providing data driven solutions, visual insights and </p>
+</section>
+<!----------------  Experience  --------------------->
+<section class="ExAcc">
+    <h2> EXP </h2>
+    <article id="J1">
+        <h3>Automation Engineer</h3>
+        <p id="Date1">Feb, 2023 - Present</p>
+        <h4>Proximate Technologies</h4>
+        <p id="Place1">Plano,TX.</p>
+        <ul>
+            <li>Responsibility 1</li>
+            <li>Responsibility 2</li>
+            <li>Responsibility 3</li>
+        </ul>
+        <dl>
+            <dt>Skills:</dt>
+            <dd>all skills used</dd>
+        </dl>
+    </article>
+    <article id="J2">
+        <h3>Data Analyst</h3>
+        <p id="Date2">Sep, 2016 - Aug, 2020</p>
+        <h4>Ericsson India Pvt. Ltd.</h4>
+        <p id="Place2">Location</p>
+        <ul>
+            <li>Responsibility 1</li>
+            <li>Responsibility 2</li>
+            <li>Responsibility 3</li>
+        </ul>
+        <dl>
+            <dt>Skills:</dt>
+            <dd>all skills used</dd>
+        </dl>
+    </article>
+</section>
+<!----------------  Skills  --------------------->
+<section class="Skill">
+    <h2> Skills </h2>
+    <h4> this is the part where we brag </h4>
+</section>
+<!----------------  Academics  --------------------->
+<section class="ExAcc">
+    <h2> Academics </h2>
+    <article id="A1">
+        <h3>(M.S)Computer Engineering</h3>
+        <p id="Date3">Jan, 2021 - Dec, 2022</p>
+        <h4>San Jose State University</h4>
+        <p id="Place3">San Jose, C.A.</p>
+        <ul>
+            <li>Responsibility 1</li>
+            <li>Responsibility 2</li>
+            <li>Responsibility 3</li>
+        </ul>
+        <dl>
+            <dt>Skills:</dt>
+            <dd>all skills used</dd>
+        </dl>
+    </article>
+    <article id="A2">
+        <h3>(B.Tech)Electronics and Communication Engineering</h3>
+        <p id="Date">Aug, 2012 - May, 2016</p>
+        <h4>Amrita University</h4>
+        <p id="Place">Coimbatore, India.</p>
+        <ul>
+            <li>Responsibility 1</li>
+            <li>Responsibility 2</li>
+            <li>Responsibility 3</li>
+        </ul>
+        <dl>
+            <dt>Skills:</dt>
+            <dd>all skills used</dd>
+        </dl>
+    </article>
+</section>
+<!----------------  Projects  --------------------->
+<section class="Projects">
+    <h2> Projects </h2>
+    <!--- <h4> this is the part where we brag </h4> --->
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+</section>
+<!----------------  Contact Form  --------------------->
+<section class="Form">
+    <h2> Contact </h2>
+    <form align="center" id="contact" method="POST" action="https://script.google.com/macros/s/AKfycbxMHsR4AsqIGpgaBr-sGmpjxdqbL3RAkQWScmTdocmr9m7zE6tKj_njDtRLrpLEdAIq_Q/exec" target="acknowledgement">
+        <label>Title:</label>
+        <input type="text" id="ContactTitle" name="CTitle" placeholder="Mr., Ms., ...">
+        <label>Name:</label><input type="text" id="ContactName" name="CName" placeholder="Full Name">
+        <label>Email:</label><input type="text" id="ContactMode" name="Contact" placeholder="yourmail@mailing.com"><br><br>
+        <label>Message:</label><br>
+        <textarea name="message" rows="8" cols="100" placeholder="Your message to reach me."></textarea><br>
+        <button type="submit" onclick="Submitted(),clicked(event)">Submit</button>
+    </form>
+    <!---<script>
+        function Submitted() {
+            alert('Submitted!');
+        }
+    </script> --->
+</section>
+
+<!----------------  Footer Notes  --------------------->
+<section id="ContactForm" class="Footer">
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container"><h2>Ramstein</h2><p>Baulder is invulnerable, physical or magical.</p></div>
+    <div class="Container" id="externalLinks">
+        <a href=""><h3><i class="fab fa-twitter">&ensp;Twitter</i></h3></a>
+        <a href=""><h3><i class="fab fa-github">&ensp;Github</i></h3></a>
+        <a href=""><h3><i class="fab fa-linkedin-in">&ensp;Linkedin</i></h3></a>
+
+    </div>
+</section>
+</body>
+</html>
